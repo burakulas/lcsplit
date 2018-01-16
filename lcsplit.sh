@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### LC-SPANS (Lightcurve Split and Analyse Script) (c)2018 Burak Ulas ####
+##### LCSPLIT is a part of LCSPANS (Lightcurve Split and Analyse Script) (c)2018 Burak Ulas ####
 
 clear
 
@@ -118,19 +118,11 @@ sp_sp0
 #####
 
 awk '{printf"%-10s %-8s %-0s\n",$1,$2,$3}' alltocode.tpl >  allcodec2.tpl
-#cat allcodec2.tpl | awk '{if(min==""){min=max=$3}; if($3>max) {max=$3}} END {print max}' > allcodemax.tpl
-#awk '{printf"%0s",$1}' allcodemax.tpl > temp1.tpl
-#NUM1=$(awk '{printf $1+1}' temp1.tpl)
-#NUM2=$(awk '{printf $1}' temp1.tpl)
-#seq 0 $NUM2 > numtab0.tpl
-#seq -w 0000  $NUM2 > numtab1.tpl
-#seq -w 0001 $NUM1 > numtab2.tpl
 
 echo -e "\033[1;31mSplitting process starts from the first datapoint.\033[0m"
 echo Splitting started...
 
 split_1(){
-#pr -mts numtab0.tpl numtab1.tpl numtab2.tpl > numtab.tpl
 awk '{printf"%-0s,%-0s,%-0s\n",$1,$2,$3}' allcodec2.tpl >  allcodecom.tpl
 awk -F, '{print > "data"$3}' allcodecom.tpl
 
@@ -191,7 +183,6 @@ done
 
 export -f if_1
 
-
 if_1_sp(){
 if_1 &
 PID=$!
@@ -206,10 +197,6 @@ done
 export -f if_1_sp
 
 if_1_sp
-
-
-
-
 
 if [ ! -f templist2b2.tpl ]
 	then
@@ -236,8 +223,6 @@ if [ ! -f templist2b2.tpl ]
                 echo " "
 		exit 1
 fi
-
-
 
 for_1(){
 for i in data*;do
@@ -275,9 +260,6 @@ i=$((number-0))
 mv ${file} $(printf data%06d.slc $i)
 done
 mv *.slc ./LightCurves/
-
-
-
 mv dat* ./work
 mv *.tpl ./work
 rm -rf work
