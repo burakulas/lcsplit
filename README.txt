@@ -28,7 +28,7 @@ The script asks the user:
    . Ubuntu 16.04, 17.10
    . Fedora
 
-When used you may want to refer the script by giving its GitHub address as the reference.
+When used you may want to refer the script by giving its GitHub address as the reference: https://github.com/burakulas/lcsplit
 
 For comments and further questions: bulash@gmail.com
 
