@@ -24,9 +24,6 @@ The script asks the user:
 - NOTES:
 1) .tpl file extension is used by the script for the temporary lists and .scl file extension is used for sub-light curves. Therefore, it is adviced not to use these extensions as your data file extension to avoid it from removing or overwriting at the end of the run.
 2) Re-running the script warns the user about removing the old sub-light curve folder. Take a backup or change the folder name if you believe that you need it.
-3) The script runs without any problem in the following Linux distributions:
-   . Ubuntu 16.04, 17.10
-   . Fedora
 
 When used you may want to refer the script by giving its GitHub address as the reference: https://github.com/burakulas/lcsplit
 
