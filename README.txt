@@ -26,7 +26,7 @@ The script asks the user:
 2) Re-running the script warns the user about removing the old sub-light curve folder. Take a backup or change the folder name if you believe that you need it.
 3) The script runs without any problem in the following Linux distributions:
    . Ubuntu 16.04, 17.10
-   . Fedora ...
+   . Fedora
 
 When used you may want to refer the script by giving its GitHub address as the reference.
 
