@@ -13,7 +13,7 @@ with the root privileges. Then run the script with:
 
 in bash.
 
-Depending on your entries, the sub-lightcurves are extracted in a folder named LightCurves created by the script.
+Depending on your entries, the sub-light curves are extracted in a folder named LightCurves created by the script.
 
 The script asks the user:
 
