@@ -17,7 +17,7 @@ Depending on your entries, the sub-light curves are extracted in a folder named 
 
 The script asks the user:
 
-1) Name of the data file, when it expects that the user enters the name of the data file and hit the enter.
+1) Name of the data file, when it expects that the user enters the name of the data file and hit the enter. Data file must have two-column (e.g. time and magnitude).
 2) Period value, the value which bases the splitting process. The script cuts long data according to this value and it must be greater than zero.
 3) The minimum desired number of data points in each sub-light curve; the script ignores the sub-light curves which do not contain the number of data points smaller than this value. Therefore, small values allow the script to create more sub-light curves.
 
