@@ -1,6 +1,6 @@
 #!/bin/bash
 
-##### LCSPLIT is a part of LCSPANS (Lightcurve Split and Analyse Script) (c)2018 Burak Ulas ####
+##### LCSPLIT is a part of LCSPANS (Lightcurve SPlit and ANalyse Script) project.(c)2018 Burak Ulas ####
 
 clear
 
