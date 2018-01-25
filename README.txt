@@ -26,9 +26,10 @@ The script asks the user:
 2) Re-running the script warns the user about removing the old sub-light curve folder called "LightCurves" (and "work" folder if exist). Take a backup or change the folder name if you believe that you need it.
 3) Be sure that you can run AWK. If not, install it by following the installation procedure of your Linux distribution. (http://www.cs.princeton.edu/~bwk/btl.mirror/)
 4) The columns in the data file must be separated by tab delimiter in order to script runs without an error message.
-4) The Line Feed (LF) type, which is widely used by Unix operating systems, works fine as the end of line control character of the data file while the other types may cause the script not to create temporary list files and finalize the process correctly.
-5) A sample input file input.in (531009 lines, ~45 MB) can be downloaded from https://yadi.sk/d/_1AWYE5q3RjxMg. It was constructed by combining all short cadence data of KIC10661783 in fit files provided by MAST (https://archive.stsci.edu/kepler/data_search/search.php)
-6) Check the related GitHub page for updated versions.
+5) The Line Feed (LF) type, which is widely used by Unix operating systems, works fine as the end of line control character of the data file while the other types may cause the script not to create temporary list files and finalize the process correctly.
+6) A sample input file input.in (531009 lines, ~45 MB) can be downloaded from https://yadi.sk/d/_1AWYE5q3RjxMg. It was constructed by combining all short cadence data of the binary star KIC10661783 in fit files provided by MAST (https://archive.stsci.edu/kepler/data_search/search.php). The orbital period of the star was given as 1.2313633 days in Kepler Eclipsing Binary online catalog (http://keplerebs.villanova.edu/about)
+7) The last digits of split files in LightCurve folder refer the cycle numbers. Note that since there may some gaps in observational data they may not be placed in consecutive order.
+8) Check the related GitHub page for updated versions.
 
 When used the script, you may want to give reference to its GitHub address: https://github.com/burakulas/lcsplit
 
