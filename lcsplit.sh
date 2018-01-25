@@ -53,6 +53,7 @@ read -p $'\e[1;33mName of the data file\e[0m : ' dfi
 if [ ! -f $dfi ]; then
     echo -e "\033[0;31mFile not found!\033[0m"
     echo " "
+    rm *.tpl
     exit 1
 fi
 rm *.tpl
@@ -185,7 +186,7 @@ echo " "
 echo  Sorting the light curve...
 
 sort_1(){
-sort -k1 alltocode.tpl -o dfso.tpl
+sort -nk1 alltocode.tpl -o dfso.tpl
 mv dfso.tpl alltocode.tpl
 }
 export -f sort_1
