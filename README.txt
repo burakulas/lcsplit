@@ -5,7 +5,7 @@ The data file and the script (lcsplit.sh) must be put in the same directory. Fir
 
 chmod a+x lcsplit.sh
 
-with the root privileges. Then run the script with:
+which may require the root privileges. Then run the script with:
 
 ./lcsplit.sh
 
